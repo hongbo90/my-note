@@ -1,0 +1,20 @@
+{
+  "users":[
+    {
+      "id":10000,
+      "username":"dustxm",
+      "nickname":"eversleeping",
+      "password":"123456",
+      "reg_time":"2017-4-27"
+    }
+  ],
+  "article":[
+    {
+      "id":10000,
+      "title":"first article",
+      "content":"This is content",
+      "create_at":"2017-4-27 16:00:12",
+      "edit_at":"2017-4-27 16:00:12"
+    }
+  ]
+}
