@@ -6,7 +6,7 @@ const apiUrl = "http://localhost:9000/"
 class Home extends Component{
 
 	componentWillMount(){
-		fetch("http://localhost:9000/posts")
+		fetch("http://localhost:9000/article")
 			.then(res=>res.json())
 			.then((res)=>{
 				res.map((item)=>{
@@ -16,7 +16,7 @@ class Home extends Component{
 	}
 
 	handleClick(){
-		fetch(apiUrl + 'posts',{
+		fetch(apiUrl + 'article',{
 			method:'post',
 			headers:{
 				'Content-Type':'application/json'

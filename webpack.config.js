@@ -24,13 +24,16 @@ module.exports = {
 				use:'babel-loader'
 			},
 			{
-				test:/\.(css|scss)$/,
+				test:/\.scss$/,
 				use:[
 					{
 						loader:"style-loader"
 					},
 					{
-						loader:"css-loader?modules",
+						loader:"css-loader",
+						options:{
+							modules:true
+						}
 					},
 					{
 						loader:"sass-loader"
