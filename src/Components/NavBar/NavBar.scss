@@ -1,24 +1,10 @@
 @import '../../colors.scss';
-html,body{
-	margin: 0;
-	padding: 0;
-}
 
-a{
-	color: $black;
-	text-decoration:none;
-}
-
-ul{
-	list-style: none;
-	padding: 0;
-	margin:0;
-}
 .navbar{
 	display: flex;
 	justify-content:center;
-	height: 51px;
-	box-shadow: 0 0 4px $grey;
+	height: pxToRem(51px);
+	box-shadow: 0 0 pxToRem(4px) $grey;
 	ul{
 		display: flex;
 		flex-grow:1;
@@ -43,8 +29,8 @@ ul{
 			color:$mainBlue;
 			&:after{
 				content: '';
-			    background-color: #1da1f2;
-			    height: 2px;
+			    background-color: $mainBlue;
+			    height: pxToRem(2px);
 			    position: absolute;
 			    bottom: 0;
 			    left: 0;
@@ -52,4 +38,12 @@ ul{
 			}
 		}
 	}
+}
+
+.navbar_home_icon{
+	display: inline-block;
+	background-image: url("/src/icons/home.svg");
+	background-size: 100%;
+	width: pxToRem(20px);
+	height: pxToRem(20px);
 }

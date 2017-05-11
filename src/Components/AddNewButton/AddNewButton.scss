@@ -1,0 +1,14 @@
+@import '../../colors.scss';
+
+.editBtn{
+	display: block;
+	position: fixed;
+	right: pxToRem(20px);
+	bottom: pxToRem(20px);
+	width: pxToRem(60px);
+	height: pxToRem(60px);
+	border-radius: 50%;
+	background: $mainBlue;
+	text-align: center;
+	line-height: pxToRem(60px);
+}

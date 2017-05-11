@@ -1,0 +1,29 @@
+@import './colors.scss';
+
+html{
+	font-size: 20px;
+}
+
+body{
+	font-size: pxToRem(16px);
+	color:$black;
+	font-family: 'Microsoft YaHei';
+}
+
+html,body,ul,li,h1,h2,h3,h4,h5,h6,p{
+	margin: 0;
+	padding: 0;
+}
+
+div{
+	box-sizing:border-box;
+}
+
+ul{
+	list-style: none;
+}
+
+a{
+	color: $black;
+	text-decoration:none;
+}

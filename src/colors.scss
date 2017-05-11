@@ -4,3 +4,9 @@ $black:#14171a;
 $grey:#657786;
 $lightGrey:#ccd6dd;
 $lightYellow:#fff4c1;
+
+$default-font-size: 20px;
+
+@function pxToRem($px){
+	@return $px / $default-font-size * 1rem
+}

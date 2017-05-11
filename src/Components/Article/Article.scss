@@ -1,24 +1,61 @@
 @import '../../colors.scss';
 
 .articleContainer{
-	padding: 15px;
-	border-bottom: 1px solid $lightGrey;
+	padding: pxToRem(15px);
+	border-bottom: pxToRem(1px) solid $lightGrey;
+	display: flex;
+}
+
+.tag{
+	display: flex;
+	flex-grow:1;
+	flex-basis:0;
+	margin-left: pxToRem(5px);
+	margin-right: pxToRem(5px);
+}
+
+.tagImg{
+	display: block;
+	min-width: pxToRem(32px);
+	width: 100%;
+	height: 0;
+	padding-bottom: 100%;
+	position: relative;
+	border-radius: 4px;
+	overflow: hidden;
+	img{
+		width: 100%;
+		height: 100%;
+		display: block;
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		object-fit:cover;
+	}
+}
+
+.article{
+	display: flex;
+	flex-grow:7;
+	flex-direction: column;
+	margin-left: pxToRem(5px);
+	margin-right: pxToRem(5px);
 }
 
 .titleContainer{
-
+	display: flex;
 }
 
 .articleTitle{
-	margin: 0;
-	padding: 0;
-	font-size: 16px;
+	font-size: pxToRem(16px);
 }
 
 .contentContainer{
-
+	display: flex;
 }
 
 .articleContnet{
-	font-size: 14px;
+	font-size: pxToRem(14px);
 }

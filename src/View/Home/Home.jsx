@@ -1,5 +1,6 @@
-import React,{Component} from 'react';
-import ArticleList from './ArticleList/ArticleList';
+import React,{ Component } from 'react';
+import ArticleList from '../../Components/ArticleList/ArticleList';
+import AddNewButton from '../../Components/AddNewButton/AddNewButton';
 
 const apiUrl = "http://localhost:9000/"
 
@@ -33,6 +34,7 @@ class Home extends Component{
 		return (
 			<div>
 				<ArticleList />
+				<AddNewButton />
 			</div>
 		)
 	}

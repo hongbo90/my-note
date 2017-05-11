@@ -14,6 +14,8 @@ class ArticleList extends Component{
 			 //      "content": "This is content",
 			 //      "create_at": "2017-4-27 16:00:12",
 			 //      "edit_at": "2017-4-27 16:00:12"
+			 //		 "tag_name": "",
+			 //		 "tag_img": ""
 			 //    }
 			]
 		}
@@ -41,7 +43,7 @@ class ArticleList extends Component{
 			{
 				articleList.map((item,index)=>{
 					return (
-						<Article title={item.title} content={item.content} key={index} />
+						<Article title={item.title} content={item.content} key={index} tagName={item.tag_name} tagImg={item.tag_img} articleId={item.id} />
 					)
 				})
 			}
