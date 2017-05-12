@@ -26,7 +26,9 @@ server.post('/login',(req,res,next)=>{
 server.use(jsonServer.bodyParser);
 server.use((req,res,next)=>{
 	if(req.method === 'POST'){
-		req.body.createAt = Date.now();
+		let toDate = new Date();
+		let create_at = toDate.getFullYear() + '-' + (toDate.getMonth()+1) + '-' + toDate.getDate() + ' ' + toDate.getHours() + ':' + toDate.getMinutes() + ':' + toDate.getSeconds();
+		req.body.create_at = create_at;
 	}
 	// Continue to JSON Server router
 	next();

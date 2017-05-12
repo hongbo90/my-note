@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import styles from './Navbar.scss';
-import {BrowserRouter as Router, Route, Link, NavLink} from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 class Navbar extends Component{
 

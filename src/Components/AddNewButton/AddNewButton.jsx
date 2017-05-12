@@ -5,7 +5,7 @@ import styles from './AddNewButton.scss';
 class AddNewButton extends Component{
 	render(){
 		return (
-			<Link className={styles.editBtn} to='/editpage'>
+			<Link className={styles.editBtn} to='/add'>
 				Add<img />
 			</Link>
 		)
