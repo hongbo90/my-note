@@ -39,6 +39,7 @@
 .article{
 	display: flex;
 	flex-grow:7;
+	flex-basis:0;
 	flex-direction: column;
 	margin-left: pxToRem(5px);
 	margin-right: pxToRem(5px);

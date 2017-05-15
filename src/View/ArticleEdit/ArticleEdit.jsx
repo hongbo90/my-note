@@ -1,12 +1,17 @@
 import React, { Component } from 'react';
+import styles from './ArticleEdit.scss';
 
 class ArticleEdit extends Component{
 
 	constructor(props){
 		super(props);
 		this.state = {
-			title:'',
-			content:''
+			"title": "",
+			"content": "",
+			"edit_at": "",
+			"tag_name": "TAG",
+			"tag_img": "../src/icons/tags/tag1.gif",
+			"create_at": ""
 		}
 		this.handleTitleChange = this.handleTitleChange.bind(this);
 		this.handleContentChange = this.handleContentChange.bind(this);
@@ -54,15 +59,15 @@ class ArticleEdit extends Component{
 	render(){
 		return (
 			<div>
-				<div>
-					<input type="text" placeholder="请输入标题" onChange={this.handleTitleChange} />
+				<div className={styles.lineContainer}>
+					<input className={styles.inputTitle} type="text" placeholder="请输入标题" onChange={this.handleTitleChange} />
 				</div>
-				<div>
-					<textarea type="text" placeholder="请输入内容" onChange={this.handleContentChange} />
+				<div className={styles.lineContainer}>
+					<textarea className={styles.inputContent} type="text" placeholder="请输入内容" onChange={this.handleContentChange} />
 				</div>
-				<div>
-					<button onClick={this.handleCancel}>取消</button>
-					<button onClick={this.handleSave}>保存</button>
+				<div className={styles.btnContainer}>
+					<button className={styles.btnCancel} onClick={this.handleCancel}>取消</button>
+					<button className={styles.btnSave} onClick={this.handleSave}>保存</button>
 				</div>
 			</div>
 		)

@@ -1,0 +1,49 @@
+@import '../../colors.scss';
+
+.lineContainer{
+	width: 100%;
+	padding: pxToRem(15px) pxToRem(10px);
+	border-bottom: 1px solid $lightGrey;
+}
+
+.inputTitle{
+	width: 100%;
+	border:0;
+	&:focus{
+		outline: none;
+	}
+}
+
+.inputContent{
+	width: 100%;
+	border: 0;
+	min-height: pxToRem(150px);
+	resize:none;
+	&:focus{
+		outline: none;
+	}
+}
+
+.btnContainer{
+	width: 100%;
+	text-align: right;
+	margin-top: 15px;
+	padding-right: pxToRem(10px);
+	button{
+		width: pxToRem(60px);
+		height: pxToRem(30px);
+		border: none;
+		border-radius: 4px;
+	}
+}
+
+.btnCancel{
+	background-color: $lightGrey;
+	color: $white;
+}
+
+.btnSave{
+	background-color: $mainBlue;
+	color:$white;
+	margin-left: pxToRem(10px);
+}
