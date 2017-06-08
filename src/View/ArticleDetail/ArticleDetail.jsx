@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import styles from './ArticleDetail.scss';
 
 class ArticleDetail extends Component{
 
@@ -27,9 +28,8 @@ class ArticleDetail extends Component{
 
 	render(){
 		const {id, title, content} = this.state;
-		console.log(this.state)
 		return (
-			<div>
+			<div className={styles.detailContainer}>
 				<h2>{title}</h2>
 				<p>{content}</p>
 			</div>

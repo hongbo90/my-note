@@ -1,0 +1,10 @@
+@import '../../colors.scss';
+.detailContainer{
+	padding: pxToRem(10px);
+	h2{
+		font-size: pxToRem(16px);
+	}
+	p{
+		font-size: pxToRem(14px);
+	}
+}

@@ -49,6 +49,14 @@ class ArticleEdit extends Component{
 			},
 			body:JSON.stringify(body)
 		})
+			.then(res=>res.json())
+			.then(res=>{
+				if(res.id){
+					console.log("Add Successful!")
+					this.props.history.push('/');
+				}
+
+			})
 	}
 
 	//点击取消回到首页
