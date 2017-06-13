@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import NavBar from '../NavBar/NavBar';
 import styles from './ArticleDetail.scss';
 
 class ArticleDetail extends Component{
@@ -29,9 +30,12 @@ class ArticleDetail extends Component{
 	render(){
 		const {id, title, content} = this.state;
 		return (
-			<div className={styles.detailContainer}>
-				<h2>{title}</h2>
-				<p>{content}</p>
+			<div>
+				<NavBar />
+				<div className={styles.detailContainer}>
+					<h2>{title}</h2>
+					<p>{content}</p>
+				</div>
 			</div>
 		)
 	}

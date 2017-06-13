@@ -43,6 +43,10 @@ module.exports = {
 			{
 				test:/\.gif$/,
 				loader:"url-loader"
+			},
+			{
+				test:/\.svg$/,
+				loader:"svg-sprite-loader"
 			}
 		]
 	},

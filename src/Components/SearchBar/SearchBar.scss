@@ -1,0 +1,90 @@
+@import '../../colors.scss';
+
+.searchBarContainer{
+	width: 100%;
+	display: flex;
+	align-items:center;
+	justify-content:space-between;
+	height: pxToRem(51px);
+	box-shadow: 0 0 pxToRem(4px) $grey;
+	padding-left: pxToRem(15px);
+	padding-right: pxToRem(15px);
+}
+
+.inputContainer{
+	position: relative;
+	display: inline-block;
+	height: pxToRem(30px);
+	flex-grow:1;
+}
+
+.searchBarIcon{
+	animation: searchIcon .5s;
+	position: absolute;
+	display: block;
+	left: pxToRem(3px);
+	top: pxToRem(2px);
+}
+
+.searchBarInput{
+	animation: inputMove .5s;
+	padding-left: pxToRem(30px);
+	border-radius: pxToRem(15px);
+	height: 100%;
+	width: 100%;
+	box-sizing:border-box;
+	border: 0;
+	background-color: $lightGrey;
+	&:focus{
+		outline: none;
+	}
+}
+
+.cancel{
+	animation: cancelMove .6s;
+	position: relative;
+	border-radius: pxToRem(15px);
+	text-align: center;
+	line-height: pxToRem(30px);
+	width: pxToRem(50px);
+	margin-left: pxToRem(10px);
+	background-color: $lightGrey;
+	height: pxToRem(30px);
+	font-size: pxToRem(14px);
+}
+
+@keyframes searchIcon{
+	0% {
+		left:50%;
+	}
+	100%{
+		left: pxToRem(3px);
+	}
+}
+
+@keyframes inputMove{
+	0%{
+		width: 0;
+		margin-left: 50%;
+	}
+	100%{
+		width: 100%;
+		margin-left: 0;
+	}
+}
+
+@keyframes cancelMove{
+	0%{
+		right: 50%;
+		opacity: 0;
+	}
+
+	10%{
+		right: 50%;
+	}
+
+	100%{
+		right: 0;
+		opacity: 1;
+	}
+}

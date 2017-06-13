@@ -36,14 +36,9 @@
 			    left: 0;
 			    right: 0;
 			}
+			svg{
+				fill:$mainBlue;
+			}
 		}
 	}
-}
-
-.navbar_home_icon{
-	display: inline-block;
-	background-image: url("/src/icons/home.svg");
-	background-size: 100%;
-	width: pxToRem(20px);
-	height: pxToRem(20px);
 }

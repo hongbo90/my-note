@@ -12,4 +12,13 @@
 	text-align: center;
 	line-height: pxToRem(60px);
 	color: $white;
+	svg{
+		fill:$white;
+	}
+	div{
+		display: flex;
+		height: 100%;
+		align-items:center;
+		justify-content:center;
+	}
 }

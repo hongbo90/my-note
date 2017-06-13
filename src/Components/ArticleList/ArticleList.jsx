@@ -37,7 +37,7 @@ class ArticleList extends Component{
 
 	render(){
 		const {articleList} = this.state;
-		console.log(articleList);
+		articleList.reverse();
 		return (
 			<div className={styles.container}>
 			{

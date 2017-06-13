@@ -3,12 +3,12 @@ import './init.scss';
 
 import ReactDOM from 'react-dom';
 import React from 'react';
-import Home from './View/Home/Home';
-import Search from './View/Search/Search';
+import Home from './Components/Home/Home';
+import Search from './Components/Search/Search';
 import NavBar from './Components/NavBar/NavBar';
 import EditPage from './Components/EditPage/EditPage';
-import ArticleDetail from './View/ArticleDetail/ArticleDetail';
-import ArticleEdit from './View/ArticleEdit/ArticleEdit';
+import ArticleDetail from './Components/ArticleDetail/ArticleDetail';
+import ArticleEdit from './Components/ArticleEdit/ArticleEdit';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 
 
@@ -17,7 +17,6 @@ var node = document.createElement('div');
 ReactDOM.render(
 	<Router>
 		<div>
-			<NavBar />
 			<Route exact path="/" component={Home} />
 			<Route path="/search" component={Search} />
 			<Route path="/editpage" component={EditPage} />
