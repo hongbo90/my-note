@@ -13,7 +13,7 @@ class Navbar extends Component{
 					<ul>
 						<li><NavLink activeClassName={styles.active} exact={true} to="/"><HomeIcon /></NavLink></li>
 						<li><NavLink activeClassName={styles.active} to="/search"><SearchIcon /></NavLink></li>
-						<li><a href="javascript:void(0)"><SetupIcon /></a></li>
+						<li><NavLink activeClassName={styles.active} to="/setup"><SetupIcon /></NavLink></li>
 					</ul>
 				</div>
 

@@ -1,0 +1,31 @@
+@import '../../colors.scss';
+
+.setupNav{
+	width: 100%;
+	height: pxToRem(50px);
+	box-shadow: 0 0 pxToRem(4px) $grey;
+	a{
+		color: $mainBlue;
+		font-weight: 600;
+		display: block;
+		height: 100%;
+		width: 100%;
+		padding-left: pxToRem(15px);
+		line-height: pxToRem(50px);
+	}
+}
+
+.setupLine{
+	width: 100%;
+	padding-left: pxToRem(15px);
+	padding-right: pxToRem(15px);
+	height: pxToRem(40px);
+	border-bottom: 1px solid $lightGrey;
+	a{
+		display: block;
+		width: 100%;
+		height: 100%;
+		font-size: pxToRem(14px);
+		line-height: pxToRem(40px);
+	}
+}

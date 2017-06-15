@@ -1,0 +1,56 @@
+@import '../../colors.scss';
+
+.loginLine{
+	width: 100%;
+	height: pxToRem(50px);
+	padding-left: pxToRem(15px);
+	padding-right: pxToRem(15px);
+	margin-top: pxToRem(15px);
+	p{
+		text-align: center;
+	}
+}
+
+.loginTitle{
+	text-align: center;
+	height: 100%;
+	line-height: pxToRem(50px);
+	font-weight: 400;
+	font-size: pxToRem(24px);
+	margin: 0;
+}
+
+.loginInput{
+	box-sizing:border-box;
+	font-size: pxToRem(16px);
+	width: 100%;
+	height: 100%;
+	padding-left: pxToRem(15px);
+	padding-right: pxToRem(15px);
+	border: 0;
+	background-color: $deepWhite;
+	border-radius: pxToRem(4px);
+	&:focus{
+		outline: none;
+	}
+}
+
+.loginBtn{
+	font-size: pxToRem(16px);
+	font-family: "Microsoft YaHei";
+	letter-spacing: pxToRem(10px);
+	width: 100%;
+	height: 100%;
+	color: $white;
+	background-color: $mainBlue;
+	text-align: center;
+	border-radius: pxToRem(4px);
+	border:0;
+	&:focus{
+		outline: none;
+	}
+}
+
+.loginLink{
+	color: $mainBlue;
+}

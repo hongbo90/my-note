@@ -30,14 +30,13 @@ class ArticleList extends Component{
 			.then((res)=>{
 				let articleList = res;
 				let newState = this.state;
-				newState.articleList = articleList;
+				newState.articleList = articleList.reverse();
 				this.setState(newState)
 			});
 	}
 
 	render(){
 		const {articleList} = this.state;
-		articleList.reverse();
 		return (
 			<div className={styles.container}>
 			{
